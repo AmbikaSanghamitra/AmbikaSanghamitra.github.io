@@ -1,0 +1,270 @@
+:root{
+    font-size: 16px;
+}
+*{
+    font-family:'Questrial', sans-serif !important ;
+    word-spacing: 1.5px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+	background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("web-design-background.jpg");
+    background-image: -webkit-linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("web-design-background.jpg");
+    background-image: -moz-linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("web-design-background.jpg");
+    background-image: -o-linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("web-design-background.jpg");
+    background-size: auto;
+}
+.container{
+    display: block;
+    flex-direction: column;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+.navigation{
+    background-color: rgb(38, 28, 61);
+	display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 1vw;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+}
+.navigation a {
+	background-color:  rgb(38, 28, 61);
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+.navigation a:hover{
+    color: black;
+    background-color: rgb(90, 215, 247);
+}
+.portfolio{
+    display: flex;
+	flex-direction:column;
+}
+
+.ResPagePic{
+    background-image: url("webDesign\ \(Zeke\).PNG");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100% 120%;
+    font-size: 35vmax;
+}
+.centre{
+    text-align: center;
+}
+.para1{
+    background: linear-gradient(rgb(38, 74, 83),rgb(42, 238, 245));
+	display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    padding: 5vw;
+    color: white;
+}
+.picture{
+    width: 70vmax;
+    padding-left: 5vw;
+}
+#image{
+    border-radius: 2%;
+}
+.paragraph{
+    text-align: justify;
+    font-size: 1.25rem;  
+}
+.block{
+    padding: 6vw;
+}
+.myinterest{
+    background-image: url("img.png");
+}
+.subblock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.subblock1{
+    padding-right: 5vw;
+    width: 80vw;
+}
+.subblock2{
+    width: 15vw;
+}
+.headings{
+    letter-spacing: 5px;
+	font-weight: bolder;
+	font-size: 2.5rem;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+}
+.subheadings{
+	font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 0.7vw;
+}
+p{
+    font-size: 1.3rem;
+    padding-bottom: 0.7vw;
+}
+.myexp{
+    background-image: url("doodle.jpg");
+    color: rgb(214, 214, 214);
+}
+.line{
+    display: flex;
+    justify-content: center;
+}
+hr{
+	border-style: solid;
+    width: 15vmax;
+}
+.contactimage{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    padding-top: 15px;
+}
+.imagesize{
+    width: 4vw;
+    height: 4vw;
+}
+.picProj{
+    width: 50%;
+    height: 50%;
+}
+
+/* Media queries for the screen size*/
+@media screen and (max-width:705px){
+    .navigation{
+        font-size: 1rem;
+        padding: 0.1vw;
+    }
+    
+
+}
+@media screen and (max-width:630px){
+     .ResPagePic{
+        background-image: url("portfolio\(withStcker\).png");
+    } 
+    .picture{
+        width: 100vmin;
+    }
+    .headings{
+        letter-spacing: 3px;
+	    font-size: 2rem;
+    }
+    .subheadings{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    .subblock2{
+        width: 35vw;
+    }
+    .imagesize{
+        width: 30px;
+        height: 30px;
+    }
+    .contactimage{
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+    .picProj{
+        width: 70%;
+        height: 70%;
+    }
+    
+}
+@media screen and (max-width:850px){
+    .para1{
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+    .picture{
+       width: 30vw;
+   } 
+   .subblock2{
+    width: 20vw;
+   }
+}
+@media screen and (max-width:450px){
+    .subblock{
+        flex-direction: column-reverse;
+    }
+    .subheadings{
+        text-align: center;
+        word-wrap: break-word;
+        padding-bottom: 5px;
+    }
+    .contactimage{
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+    .imagesize{
+        width: 25px;
+        height: 25px;
+    }
+    .picture{
+        width: 150px;
+    }
+}
+@media screen and (max-width:350px){
+    *{
+        word-spacing: 0.8px;
+    }
+    .headings{
+        letter-spacing: 1.5px;
+	    font-size: 1.5rem;
+    }
+    .subheadings{
+        font-size: 1.1rem;
+        text-align: center;
+        word-wrap: break-word;
+        padding-bottom: 5px;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .subblock{
+        flex-direction: column-reverse;
+    }
+    .subblock2{
+        width: 60px;
+    }
+    .picture{
+        width: 150px;
+    }
+    .picProj{
+        width: 170px;
+        height: 90px;
+    }
+}
+@media screen and (max-width:180px){
+    .picProj{
+        width: 90%;
+        height: 90%;
+    }
+    .picture{
+        width: 90%;
+    }
+    .imagesize{
+        width: 15px;
+        height: 15px;
+    }
+    .contactimage{
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
